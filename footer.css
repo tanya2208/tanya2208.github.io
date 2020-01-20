@@ -1,0 +1,48 @@
+footer{
+  background: rgba(255, 255, 255, 0.9);
+  height: 120px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social, .academy, .hashtag{
+  flex: 1;
+  text-align: center;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social a{
+  background-color: #81b3d2;
+  width: 46px;
+  height: 46px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.social a:hover{
+  background-color: #669ec0;
+}
+.social a:active{
+  background-color: #5496bd;
+}
+.hashtag p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.no-opacity{
+  background: #fff;
+  height: 120px;
+  position: inherit;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}

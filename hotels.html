@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hotels.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Каталог</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <header>
+      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+      <div><a href="#">ФОТО И ВИДЕО</a></div>
+      <div><img src="images/logo.png" alt=""></div>
+      <div><a href="#">КАРТА ШТАТА</a></div>
+      <div><a href="#">ГОСТИНИЦЫ</a></div>
+    </header>
+    <div class="filter">
+      <div class="infrastructure">
+        <h3>инфраструктура:</h3>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">БАССЕЙН</div>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">ПАРКОВКА</div>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">WI-FI</div>
+        </label>
+      </div>
+      <div class="type-of-accomodation">
+        <h3>тип жилья:</h3>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">ГОСТИНИЦА</div>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">МОТЕЛЬ</div>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="" value="">
+          <div class="checkbox-text">АПАРТАМЕНТЫ</div>
+        </label>
+      </div>
+      <div class="cost-per-day">
+        <h3>стоимость в сутки (р):</h3>
+        <div class="range">
+          <input type="text" id="minCost" value="0"/>
+          <p>|</p>
+          <input type="text" id="maxCost" value="15000"/>
+        </div>
+        <div class="" id="slider"></div>
+        <button type="button" class="show" name="button">ПОКАЗАТЬ</button>
+      </div>
+    </div>
+    <div class="sort">
+      <div class="found">
+        <p>НАЙДЕНО:</p>
+        <p class="amount">3</p>
+      </div>
+      <div class="sort-type">
+        <p style="font-weight: bold; margin-right: 38px; ">СОРТИРОВКА:</p>
+        <a href="#" class="active">ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="#">ПО РЕЙТИНГУ</a>
+      </div>
+      <div class="dir">
+        <button type="button" name="button"><img src="images/icon-up.png"></button>
+        <button type="button" name="button"><img src="images/icon-down.png"></button>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="item-container">
+        <div class="item">
+          <img src="images/hotel1.jpg" alt="">
+          <div class="info">
+            <a>AMARA RESORT & SPA</a>
+            <div class="type-price">
+              <div class="type">
+                <p>ГОСТИНИЦА</p>
+              </div>
+              <div class="price">
+                <p>ОТ 4000 Р.</p>
+              </div>
+            </div>
+            <div class="btns">
+              <button type="button" name="button" class="more-info">ПОДРОБНЕЕ</button>
+              <button type="button" name="button"class="book">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="rate">
+            <div class="stars">
+            	<span class="active"></span>
+            	<span class="active"></span>
+            	<span class="active"></span>
+              <span class="active"></span>
+            </div>
+            <div class="points">
+              <p>РЕЙТИНГ:</p>
+              <p style="margin-left: 4px">8.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-container">
+        <div class="item">
+          <img src="images/hotel2.jpg" alt="">
+          <div class="info">
+            <a>DESERT QUAIL INN</a>
+            <div class="type-price">
+              <div class="type">
+                <p>МОТЕЛЬ</p>
+              </div>
+              <div class="price">
+                <p>ОТ 3000 Р.</p>
+              </div>
+            </div>
+            <div class="btns">
+              <button type="button" name="button" class="more-info">ПОДРОБНЕЕ</button>
+              <button type="button" name="button"class="book">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="rate">
+            <div class="stars">
+            	<span class="active"></span>
+            	<span class="active"></span>
+            	<span class="active"></span>
+            </div>
+            <div class="points">
+              <p>РЕЙТИНГ:</p>
+              <p style="margin-left: 4px">8.9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-container">
+        <div class="item">
+          <img src="images/hotel3.jpg" alt="">
+          <div class="info">
+            <a>VILLAS AT POCO DIABLO</a>
+            <div class="type-price">
+              <div class="type">
+                <p>АПАРТАМЕНТЫ</p>
+              </div>
+              <div class="price">
+                <p>ОТ 2000 Р.</p>
+              </div>
+            </div>
+            <div class="btns">
+              <button type="button" name="button" class="more-info">ПОДРОБНЕЕ</button>
+              <button type="button" name="button"class="book">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="rate">
+            <div class="stars">
+            	<span class="active"></span>
+            	<span class="active"></span>
+            </div>
+            <div class="points">
+              <p>РЕЙТИНГ:</p>
+              <p style="margin-left: 4px">9.2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="no-opacity">
+      <div class="hashtag">
+        <p>#visitsedona</p>
+      </div>
+      <div class="social">
+        <a href="#"><img src="images/twitter.png"></a>
+        <a href="#"><img src="images/facebook.png"></a>
+        <a href="#"><img src="images/youtube.png"></a>
+      </div>
+      <div class="academy">
+        <a href="#"><img src="images/html-academy-logo.png"></a>
+      </div>
+    </footer>
+    <script type="text/javascript">
+jQuery("#slider").slider({
+	min: 0,
+	max: 15000,
+	values: [0,15000],
+	range: true
+});
+jQuery("#slider").slider({
+	min: 0,
+	max: 15000,
+	values: [0,15000],
+	range: true,
+	stop: function(event, ui) {
+		jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
+		jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+    },
+    slide: function(event, ui){
+		jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
+		jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+    }
+});
+jQuery("input#minCost").change(function(){
+	var value1=jQuery("input#minCost").val();
+	var value2=jQuery("input#maxCost").val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		jQuery("input#minCost").val(value1);
+	}
+	jQuery("#slider").slider("values",0,value1);
+});
+
+
+jQuery("input#maxCost").change(function(){
+	var value1=jQuery("input#minCost").val();
+	var value2=jQuery("input#maxCost").val();
+
+	if (value2 > 15000) { value2 = 15000; jQuery("input#maxCost").val(15000)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		jQuery("input#maxCost").val(value2);
+	}
+	jQuery("#slider").slider("values",1,value2);
+});
+</script>
+  </body>
+</html>
