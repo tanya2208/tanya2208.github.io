@@ -1,1 +1,0 @@
-import"./countrySelect.DVyiA179.js";const o=document.querySelectorAll(".faq-item-control");o.forEach(e=>{e.addEventListener("click",()=>{e.parentElement.classList.toggle("closed"),e.querySelectorAll("img").forEach(t=>{t.classList.toggle("closed")})})});
